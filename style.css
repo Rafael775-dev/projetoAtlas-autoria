@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabeçalho {
+background-color: aqua;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #ddd;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.principal {
+  padding: 40px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin
+}
+
+.card {
+  background: #eee;
+  padding: 30px;
+  flex: 1;
+  text-align: center;
+  margin-top: 32%;
+}
+
+footer {
+    position: relative;
+  text-align: center;
+  padding: 15px;
+  background: #ddd;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
