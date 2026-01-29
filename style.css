@@ -1,0 +1,63 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GERAL */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER - FLEXBOX 1 */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #ddd;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+/* SEÇÃO PRINCIPAL */
+.principal {
+  padding: 40px;
+  text-align: center;
+}
+
+/* CARDS - FLEXBOX 2 */
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #eee;
+  padding: 30px;
+  flex: 1;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ddd;
+}
+
+/* RESPONSIVIDADE (BREAKPOINT INICIADO) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
