@@ -1,63 +1,169 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* GERAL */
 body {
   font-family: Arial, sans-serif;
+  background-color: rgb(99, 176, 221);
 }
 
-/* HEADER - FLEXBOX 1 */
+/* ================= HEADER ================= */
+
+.cabeçalho {
+  color: white;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background: #ddd;
+  background: #052641;
 }
 
 .menu {
   list-style: none;
   display: flex;
   gap: 15px;
+  color: white;
 }
 
-/* SEÇÃO PRINCIPAL */
+/* ================= SEÇÃO PRINCIPAL ================= */
+
 .principal {
   padding: 40px;
   text-align: center;
+  color: white;
 }
 
-/* CARDS - FLEXBOX 2 */
+.titulo-destaque {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+/* ================= CARDS ================= */
+
 .cards {
   display: flex;
   gap: 20px;
   padding: 20px;
+  justify-content: center;
 }
 
 .card {
-  background: #eee;
-  padding: 30px;
+  background: #0e83e2;
+  padding: 25px;
   flex: 1;
   text-align: center;
+  color: white;
+  border-radius: 12px;
+  max-width: 450px;
 }
 
-/* FOOTER */
+/* destaque dos melhores */
+.destaque {
+  border: 3px solid gold;
+}
+
+/* ================= FOTO DO PERSONAL ================= */
+
+.foto {
+  width: 70%;
+  max-width: 420px;
+  height: 260px;
+  background-color: #d3d3d3;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px auto;
+  border-radius: 12px;
+}
+
+/* quando usar imagem */
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ================= LINKS ================= */
+
+.card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+
 footer {
   text-align: center;
   padding: 15px;
   background: #ddd;
 }
 
-/* RESPONSIVIDADE (BREAKPOINT INICIADO) */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
+/* ================= RESPONSIVO ================= */
 
+@media (max-width: 768px) {
   .cards {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  .foto {
+    width: 85%;
+    height: 240px;
   }
 }
+
+/* ================= FORMULÁRIO ================= */
+
+.formulario {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.campo label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.formulario button {
+  padding: 10px;
+  background-color: #0e83e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #0b6cb8;
+}
+

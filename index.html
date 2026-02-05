@@ -3,42 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personais Trainers</title>
+  <title>AtlasMatch - Personais</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Personais</h1>
-    <nav>
-      <ul class="menu">
-        <li>Início</li>
-        <li>Personais</li>
-        <li>Contato</li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <h1 class="cabeçalho">AtlasMatch</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="personais.html">Personais</a></li>
+      <li><a href="contratar.html">Contratar</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- SEÇÃO PRINCIPAL -->
+<main>
+
+  <!-- HERO -->
   <section class="principal">
-    <h2>Encontre seu personal trainer</h2>
-    <p>Escolha o profissional ideal para você.</p>
+    <h2>Encontre seu personal trainer ideal</h2>
+    <p>Os melhores profissionais para te acompanhar nos seus objetivos</p>
   </section>
 
-  <!-- SEÇÃO DE CARDS -->
+  <!-- SOBRE -->
+  <section class="principal" id="sobre">
+    <h2>Sobre a AtlasMatch</h2>
+    <p>
+      A AtlasMatch é uma plataforma criada para conectar alunos a personal trainers
+      qualificados, facilitando a escolha do profissional ideal para cada objetivo.
+    </p>
+    <p>
+      Nosso foco é oferecer segurança, qualidade e praticidade na contratação
+      de serviços de personal trainer.
+    </p>
+  </section>
+
+  <!-- DESTAQUES -->
   <section class="personais">
+    <h2 class="titulo-destaque">🔥 Personais em destaque</h2>
+
     <div class="cards">
-      <div class="card">Personal 1</div>
-      <div class="card">Personal 2</div>
-      <div class="card">Personal 3</div>
+
+      <div class="card destaque">
+        <div class="foto">
+          <img src="/fotos/Romerito.png" alt=""> <!-- foto de mestre Merito-->
+        </div>
+        <h3>Romerito</h3>
+        <p>🥇 Melhor avaliado da plataforma</p>
+        <a href="romerito.html">Ver perfil</a>
+      </div>
+
+      <div class="card destaque">
+        <div class="foto">
+          <img src="/fotos/cariani.png" alt=""> <!--foto do cariani-->
+        </div>
+        <h3>Cariani</h3>
+        <p>🥈 Alta experiência e resultados</p>
+        <a href="cariani.html">Ver perfil</a>
+      </div>
+
+      <div class="card destaque">
+        <div class="foto">
+          <img src="/fotos/personalcommedalha.png" alt=""> <!--personal 3-->
+        </div>
+        <h3>Top 3</h3>
+        <p>🥉 Um dos melhores da AtlasMatch</p>
+        <a href="personal3.html">Ver perfil</a>
+      </div>
+
     </div>
+
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026</p>
-  </footer>
+</main>
+
+<footer>
+  <p>© 2026 - AtlasMatch</p>
+</footer>
 
 </body>
 </html>

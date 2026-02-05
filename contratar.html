@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contratar Personal - AtlasMatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 class="cabeçalho">Contratar Personal</h1>
+</header>
+
+<main>
+
+  <section class="principal">
+    <h2>Contrate um personal trainer</h2>
+    <p>Preencha o formulário e escolha o profissional ideal para você</p>
+  </section>
+
+  <section class="principal">
+    <form class="formulario">
+
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="campo">
+        <label for="personal">Selecione o personal</label>
+        <select id="personal" name="personal" required>
+          <option value="">-- Escolha um personal --</option>
+          <option value="romerito">Romerito</option>
+          <option value="cariani">Cariani</option>
+          <option value="jorge_dos_pesos">Jorge dos pesos</option>
+          <option value="personal4">Personal 4</option>
+          <option value="personal5">Personal 5</option>
+          <option value="personal6">Personal 6</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="mensagem">Objetivo / Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+
+      <button type="submit">Enviar solicitação</button>
+
+      <a href="index.html">⬅ Voltar para a página inicial</a>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 - AtlasMatch</p>
+</footer>
+
+</body>
+</html>
